@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2016
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeCraft.EnumExtension", "CodeCraft.EnumExtension\CodeCraft.EnumExtension.csproj", "{81E98140-8B0B-41E8-BD04-92EB5C329122}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{81E98140-8B0B-41E8-BD04-92EB5C329122}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81E98140-8B0B-41E8-BD04-92EB5C329122}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81E98140-8B0B-41E8-BD04-92EB5C329122}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81E98140-8B0B-41E8-BD04-92EB5C329122}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {20CD4144-9021-440D-89E6-ECFEB52C6F41}
+	EndGlobalSection
+EndGlobal
