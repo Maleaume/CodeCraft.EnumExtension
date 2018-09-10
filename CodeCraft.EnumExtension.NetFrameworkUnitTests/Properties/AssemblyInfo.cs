@@ -2,11 +2,11 @@ using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
-[assembly: AssemblyTitle("NetFrameworkUnitTests")]
+[assembly: AssemblyTitle("CodeCraft.EnumExtension.NetFrameworkUnitTests")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Hewlett-Packard")]
-[assembly: AssemblyProduct("NetFrameworkUnitTests")]
+[assembly: AssemblyProduct("CodeCraft.EnumExtension.NetFrameworkUnitTests")]
 [assembly: AssemblyCopyright("Copyright © Hewlett-Packard 2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

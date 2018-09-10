@@ -1,8 +1,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
-using System.Collections.Generic;
 using System.Linq;
-namespace CodeCraft.EnumExtension.NetFrameworkUnitTests
+namespace CodeCraft.EnumExtension.CoreUnitTests
 {
     [TestClass]
     public class EnumDescriptionattributes

@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodeCraft.EnumExtension", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodeCraft.EnumExtension.CoreUnitTests", "CodeCraft.EnumExtension.CoreUnitTests\CodeCraft.EnumExtension.CoreUnitTests.csproj", "{B038133C-AFD0-4755-B8E1-CA92442C1C36}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeCraft.EnumExtension.NetFrameworkUnitTests", "NetFrameworkUnitTests\CodeCraft.EnumExtension.NetFrameworkUnitTests.csproj", "{67740706-2EE5-4EC4-841C-D06C95EBE2EE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeCraft.EnumExtension.NetFrameworkUnitTests", "CodeCraft.EnumExtension.NetFrameworkUnitTests\CodeCraft.EnumExtension.NetFrameworkUnitTests.csproj", "{67740706-2EE5-4EC4-841C-D06C95EBE2EE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
