@@ -6,16 +6,25 @@ using System.Reflection;
 
 namespace CodeCraft.EnumExtension
 {
-    
+    /// <summary>
+    /// Extension to retrieve any attributes on a specific <see cref="Enum"/> value.
+    /// </summary>
     public static class EnumExtensions
     {
+        /// <summary>
+        /// Retrieve <typeparamref name="TResult"/> attribute for specific enum value.
+        /// </summary>
+        /// <returns>A instance of <typeparamref name="TResult"/> that contains attribute of <see cref="source"/> enum value</returns>
         public static TResult SpecificAttribute<TResult>(this Enum source)
                  where TResult : Attribute
         {
             var fieldInfo = source.GetType().GetField(source.ToString());
             return fieldInfo.GetCustomAttributes<TResult>(false).FirstOrDefault();
         }
-
+        /// <summary>
+        /// Retrieve <see cref="DescriptionAttribute"/> for specific enum value.
+        /// </summary>
+        /// <returns>A string that contains description  of <see cref="source"/> enum value</returns>
         public static string DescriptionAttribute(this Enum source)
         {
             var descriptionAttribute = SpecificAttribute<DescriptionAttribute>(source);
@@ -23,6 +32,9 @@ namespace CodeCraft.EnumExtension
         }
     }
 
+    /// <summary>
+    /// Extension to retrieve  attributes for all  values of <typeparamref name="E"/> Enum
+    /// </summary>
     public static class Enum<E>
         where E : Enum
     {
@@ -33,7 +45,7 @@ namespace CodeCraft.EnumExtension
         /// <exception cref="ArgumentException"> Thrown if <typeparamref name="E"/> is not an Enum</exception>
         /// <returns> An enumerable of the values of the constants <typeparamref name="E"/> </returns>
         public static IEnumerable<E> GetValues()
-            =>  Enum.GetValues(typeof(E)).Cast<E>();
+            => Enum.GetValues(typeof(E)).Cast<E>();
 
         /// <summary>
         /// Retrieve <see cref="DescriptionAttribute"/> for each enum value of <typeparamref name="E"/> Enum.
@@ -41,7 +53,7 @@ namespace CodeCraft.EnumExtension
         /// <exception cref="ArgumentException"> Thrown if <typeparamref name="E"/> is not an Enum</exception>
         /// <returns>An enumerable that contains descriptions of each enum value</returns>
         public static IEnumerable<string> GetDescriptions()
-            =>GetValues().Select(e => e.DescriptionAttribute());
+            => GetValues().Select(e => e.DescriptionAttribute());
 
         /// <summary>
         /// Retrieve specific <typeparamref name="TResult"/> attribute for each enum value of <typeparamref name="E"/>  Enum.
@@ -70,7 +82,7 @@ namespace CodeCraft.EnumExtension
         /// <returns>An enumerable of key value pair</returns>
         public static IEnumerable<KeyValuePair<E, TResult>> GetEnumAttributePairs<TResult>()
                 where TResult : Attribute
-             =>  GetValues().Select(e => new KeyValuePair<E, TResult>(e, e.SpecificAttribute<TResult>()));
+             => GetValues().Select(e => new KeyValuePair<E, TResult>(e, e.SpecificAttribute<TResult>()));
     }
 }
 

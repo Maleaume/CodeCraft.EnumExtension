@@ -3,8 +3,15 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <SignAssembly>false</SignAssembly>
+    <SignAssembly>true</SignAssembly>
     <LangVersion>7.3</LangVersion>
+    <Description>Extension of Enum allowing to retrieve any attributes on any enum values.
+</Description>
+    <PackageTags>Enum Extensions Attributes DesciptionAttributes Retrieve</PackageTags>
+    <NeutralLanguage>en</NeutralLanguage>
+    <Authors>Maleaume BONNIN</Authors>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <AssemblyOriginatorKeyFile>CodeCraft.pfx</AssemblyOriginatorKeyFile>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
