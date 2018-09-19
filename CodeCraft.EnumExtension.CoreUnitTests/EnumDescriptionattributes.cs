@@ -90,6 +90,21 @@ namespace CodeCraft.EnumExtension.CoreUnitTests
             Assert.AreEqual(3, allDescriptions[2].Value.Numerical);
 
         }
+
+        [TestMethod]
+        public void GetEnumValueDescription()
+        {
+            var firsDescription = ETestEnum.First.DescriptionAttribute();
+            Assert.AreEqual("First enum", firsDescription);
+
+        }
+        [TestMethod]
+        public void GetEnumValueSpecifiAttributes()
+        {
+            var firstSpecificAttr = ETestEnum.First.SpecificAttribute<MyDescriptionAttribute>();
+            Assert.AreEqual("One", firstSpecificAttr.Literal);
+            Assert.AreEqual(1, firstSpecificAttr.Numerical);
+        }
         [TestMethod]
         [Description("Retrieve all values of an enumerator.")]
         public void GetAllEnumValues()
@@ -100,38 +115,5 @@ namespace CodeCraft.EnumExtension.CoreUnitTests
             Assert.AreEqual(ETestEnum.Second, allEnums[1]);
             Assert.AreEqual(ETestEnum.Third, allEnums[2]);
         }
-
-        [TestMethod]
-        [Description("Test if exception thrown if developer try to use another type than an enum")]
-        [ExpectedException(typeof(ArgumentException))]
-        public void GetValuesException()
-            => Enum<double>.GetValues();
-
-
-        [TestMethod]
-        [Description("Test if exception thrown if developer try to use another type than an enum")]
-        [ExpectedException(typeof(ArgumentException))]
-        public void GetDescriptionException()
-            => Enum<double>.GetDescriptions();
-
-
-        [TestMethod]
-        [Description("Test if exception thrown if developer try to use another type than an enum")]
-        [ExpectedException(typeof(ArgumentException))]
-        public void GetAttributesException()
-            => Enum<int>.GetAttributes<MyDescriptionAttribute>();
-
-        [TestMethod]
-        [Description("Test if exception thrown if developer try to use another type than an enum")]
-        [ExpectedException(typeof(ArgumentException))]
-        public void GetEnumAttributePairsException()
-         => Enum<int>.GetEnumAttributePairs<MyDescriptionAttribute>();
-
-
-        [TestMethod]
-        [Description("Test if exception thrown if developer try to use another type than an enum")]
-        [ExpectedException(typeof(ArgumentException))]
-        public void GetEnumDescriptionPairsException()
-         => Enum<int>.GetEnumAttributePairs<MyDescriptionAttribute>().ToList();
     }
 }

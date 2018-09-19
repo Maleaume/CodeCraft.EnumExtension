@@ -101,37 +101,5 @@ namespace CodeCraft.EnumExtension.NetFrameworkUnitTests
             Assert.AreEqual(ETestEnum.Third, allEnums[2]);
         }
 
-        [TestMethod]
-        [Description("Test if exception thrown if developer try to use another type than an enum")]
-        [ExpectedException(typeof(ArgumentException))]
-        public void GetValuesException()
-            => Enum<double>.GetValues();
-
-
-        [TestMethod]
-        [Description("Test if exception thrown if developer try to use another type than an enum")]
-        [ExpectedException(typeof(ArgumentException))]
-        public void GetDescriptionException()
-            => Enum<double>.GetDescriptions();
-
-
-        [TestMethod]
-        [Description("Test if exception thrown if developer try to use another type than an enum")]
-        [ExpectedException(typeof(ArgumentException))]
-        public void GetAttributesException()
-            => Enum<int>.GetAttributes<MyDescriptionAttribute>();
-
-        [TestMethod]
-        [Description("Test if exception thrown if developer try to use another type than an enum")]
-        [ExpectedException(typeof(ArgumentException))]
-        public void GetEnumAttributePairsException()
-         => Enum<int>.GetEnumAttributePairs<MyDescriptionAttribute>();
-
-
-        [TestMethod]
-        [Description("Test if exception thrown if developer try to use another type than an enum")]
-        [ExpectedException(typeof(ArgumentException))]
-        public void GetEnumDescriptionPairsException()
-         => Enum<int>.GetEnumAttributePairs<MyDescriptionAttribute>().ToList();
     }
 }
