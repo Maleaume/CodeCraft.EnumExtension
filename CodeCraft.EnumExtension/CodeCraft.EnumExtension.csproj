@@ -12,6 +12,11 @@
     <Authors>Maleaume BONNIN</Authors>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <AssemblyOriginatorKeyFile>CodeCraft.pfx</AssemblyOriginatorKeyFile>
+    <AssemblyVersion>1.0.0.1</AssemblyVersion>
+    <FileVersion>1.0.0.1</FileVersion>
+    <Version>1.0.1</Version>
+    <PackageReleaseNotes>v1.0.0 : Original version
+v1.0.1: Update package informations</PackageReleaseNotes>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
