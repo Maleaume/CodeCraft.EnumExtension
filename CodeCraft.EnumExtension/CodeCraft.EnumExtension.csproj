@@ -11,7 +11,7 @@
     <NeutralLanguage>en</NeutralLanguage>
     <Authors>Maleaume BONNIN</Authors>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
-    <AssemblyOriginatorKeyFile>CodeCraft.pfx</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>CodeCraft.snk</AssemblyOriginatorKeyFile>
     <AssemblyVersion>1.0.0.1</AssemblyVersion>
     <FileVersion>1.0.0.1</FileVersion>
     <Version>1.0.1</Version>
