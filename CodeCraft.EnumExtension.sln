@@ -1,13 +1,18 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28010.2016
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28922.388
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodeCraft.EnumExtension", "CodeCraft.EnumExtension\CodeCraft.EnumExtension.csproj", "{81E98140-8B0B-41E8-BD04-92EB5C329122}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodeCraft.EnumExtension.CoreUnitTests", "CodeCraft.EnumExtension.CoreUnitTests\CodeCraft.EnumExtension.CoreUnitTests.csproj", "{B038133C-AFD0-4755-B8E1-CA92442C1C36}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeCraft.EnumExtension.NetFrameworkUnitTests", "CodeCraft.EnumExtension.NetFrameworkUnitTests\CodeCraft.EnumExtension.NetFrameworkUnitTests.csproj", "{67740706-2EE5-4EC4-841C-D06C95EBE2EE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0BBD8F17-0679-4302-ABD5-DE7277368367}"
+	ProjectSection(SolutionItems) = preProject
+		LICENSE.md = LICENSE.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

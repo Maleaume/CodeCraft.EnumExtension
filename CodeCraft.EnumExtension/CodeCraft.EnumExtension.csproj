@@ -7,16 +7,21 @@
     <LangVersion>7.3</LangVersion>
     <Description>Extension of Enum allowing to retrieve any attributes on any enum values.
 </Description>
-    <PackageTags>Enum Extensions Attributes DesciptionAttributes Retrieve</PackageTags>
+    <PackageTags>Enum Extensions Attributes DesrciptionAttributess</PackageTags>
     <NeutralLanguage>en</NeutralLanguage>
     <Authors>Maleaume BONNIN</Authors>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <AssemblyOriginatorKeyFile>CodeCraft.snk</AssemblyOriginatorKeyFile>
-    <AssemblyVersion>1.0.0.1</AssemblyVersion>
-    <FileVersion>1.0.0.1</FileVersion>
-    <Version>1.0.1</Version>
-    <PackageReleaseNotes>v1.0.0 : Original version
-v1.0.1: Update package informations</PackageReleaseNotes>
+    <AssemblyVersion>1.1.0.0</AssemblyVersion>
+    <FileVersion>1.1.0.0</FileVersion>
+    <Version>1.1</Version>
+    <PackageReleaseNotes>1.0.0 : Original version
+1.0.1: Update package informations
+1.1: license MIT</PackageReleaseNotes>
+    <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
+    <Company>CodeCraft</Company>
+    <RepositoryUrl>https://github.com/Maleaume/CodeCraft.EnumExtension</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/Maleaume/CodeCraft.EnumExtension</PackageProjectUrl>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
